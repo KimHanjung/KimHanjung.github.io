@@ -1,0 +1,57 @@
+---
+layout: archive
+title: "📝 Publications"
+permalink: /publications/
+author_profile: true
+---
+
+
+<div class="row">
+  <div class="column left">
+    <img src="../images/visage.png" alt="main">
+  </div>
+  <div class="column right">
+    <p>
+      <b> VISAGE: Video Instance Segmentation with Appearance-Guided Enhancement </b><br />
+      <span style="font-size:75%;color:grey"> <b>Hanjung Kim</b>, Jaehyun Kang, Miran Heo, Sukjun Hwang, Seoung Wug Oh, Seon Joo Kim </span> <br />
+      <span style="font-size:75%"> <b>Preprint</b> </span> <br />
+      <span style="font-size:75%">
+        <a href="https://arxiv.org/pdf/2312.04885.pdf">[Paper]</a>
+        <a href="https://github.com/KimHanjung/VISAGE">[Code]</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column left">
+    <img src="../images/sola.png" alt="main">
+  </div>
+  <div class="column right">
+    <p>
+      <b> Soft-Landing Strategy for Alleviating the Task Discrepancy Problem in Temporal Action Localization Tasks </b><br />
+      <span style="font-size:75%;color:grey"> Hyolim Kang, <b>Hanjung Kim</b>, Joungbin An, Minsu Cho, Seon Joo Kim </span> <br />
+      <span style="font-size:75%"> <b>CVPR 2023</b> </span> 
+      <span style="font-size:75%;color:#E2745C"> Finalist at Qualcomm Innovation Fellowship 2023 </span><br />
+      <span style="font-size:75%">
+        <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Kang_Soft-Landing_Strategy_for_Alleviating_the_Task_Discrepancy_Problem_in_Temporal_CVPR_2023_paper.pdf">[Paper]</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<div class="column left">
+  <img src="../images/genvis.png" alt="main">
+</div>
+<div class="column right">
+  <p>
+    <b> A Generalized Framework for Video Instance Segmentation </b> <br />
+    <span style="font-size:75%;color:grey"> Miran Heo, Sukjun Hwang, Jeongseok Hyun, <b>Hanjung Kim</b>, Seoung Wug Oh, Joon-Young Lee, Seon Joo Kim </span> <br />
+    <span style="font-size:75%"> <b>CVPR 2023</b> </span> <br />
+    <span style="font-size:75%">
+      <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Heo_A_Generalized_Framework_for_Video_Instance_Segmentation_CVPR_2023_paper.html">[Paper]</a>
+      <a href="https://github.com/miranheo/GenVIS">[Code]</a>
+    </span>
+
+  </p>
+</div>
