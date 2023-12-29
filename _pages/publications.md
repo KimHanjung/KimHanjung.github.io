@@ -35,6 +35,7 @@ author_profile: true
       <span style="font-size:75%;color:#E2745C"> Finalist at Qualcomm Innovation Fellowship 2023 </span><br />
       <span style="font-size:75%">
         <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Kang_Soft-Landing_Strategy_for_Alleviating_the_Task_Discrepancy_Problem_in_Temporal_CVPR_2023_paper.pdf">[Paper]</a>
+        <a href="https://github.com/musicalOffering/sola">[Code]</a>
       </span>
     </p>
   </div>
