@@ -10,7 +10,7 @@ redirect_from:
 
 I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/). I completed my B.S. in computer science at Yonsei University.
 
-👀 My research interests mainly lie in computer vision and deep learning, especially in visual understanding.
+👀 My research interests are focused on the exciting fields of computer vision and robot learning, with a particular emphasis on video understanding and its applications.
 
 <br/>
 
@@ -31,5 +31,11 @@ I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https
   - Jul. 2022 - Jan. 2023
 
 <br/>
+
+# ✏️ Academic Services
+- Conference
+  - BMVC, ECCV
+- Journal
+  - TPAMI
 
 <!-- # ✏️ Academic Activities -->

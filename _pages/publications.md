@@ -14,7 +14,7 @@ author_profile: true
     <p>
       <b> VISAGE: Video Instance Segmentation with Appearance-Guided Enhancement </b><br />
       <span style="font-size:75%;color:grey"> <b>Hanjung Kim</b>, Jaehyun Kang, Miran Heo, Sukjun Hwang, Seoung Wug Oh, Seon Joo Kim </span> <br />
-      <span style="font-size:75%"> <b>Preprint</b> </span> <br />
+      <span style="font-size:75%"> <b>ECCV 2024</b> </span> <br />
       <span style="font-size:75%">
         <a href="https://arxiv.org/pdf/2312.04885.pdf">[Paper]</a>
         <a href="https://github.com/KimHanjung/VISAGE">[Code]</a>
