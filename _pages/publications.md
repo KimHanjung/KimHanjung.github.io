@@ -4,11 +4,31 @@ title: "📝 Publications"
 permalink: /publications/
 author_profile: true
 ---
-
+`* indicates equal contribution.`
 
 <div class="row">
-  <div class="column left">
-    <img src="../images/visage.png" alt="main">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+      <img src="../images/uniskill.png" alt="main" style="width: 100%; height: auto;">
+  </div>
+  <div class="column right">
+    <p>
+      <b> Imitating Human Videos via Cross-Embodiment Skill Representations </b><br />
+      <span style="font-size:75%;color:grey"> <b>Hanjung Kim$^*$</b>, Jaehyun Kang$^*$, Hyolim Kang, Meedeum Cho, Seon Joo Kim, Youngwoon Lee </span> <br />
+      <span style="font-size:75%"> <b>Under Review</b> </span> <br />
+      <span style="font-size:75%">
+        <a href="./">[Paper(TBD)]</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<br/>
+
+<div class="row">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+      <img src="../images/visage.png" alt="main">
   </div>
   <div class="column right">
     <p>
@@ -24,9 +44,12 @@ author_profile: true
   </div>
 </div>
 
+<br/>
+
 <div class="row">
-  <div class="column left">
-    <img src="../images/sola.png" alt="main">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+      <img src="../images/sola.png" alt="main">
   </div>
   <div class="column right">
     <p>
@@ -42,8 +65,11 @@ author_profile: true
   </div>
 </div>
 
-<div class="column left">
-  <img src="../images/genvis.png" alt="main">
+<br/>
+
+<div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+    <img src="../images/genvis.png" alt="main">
 </div>
 <div class="column right">
   <p>

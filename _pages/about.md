@@ -8,9 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/). I completed my B.S. in computer science at Yonsei University.
+I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/). 
+Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 
-👀 My research interests are focused on the exciting fields of computer vision and robot learning, with a particular emphasis on video understanding and its applications.
+MY research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
+I actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on Learning from Video in Robotics.
+Additionally, I will be joining NYU as a visiting student under the supervision of [Prof. Lerrel Pinto](https://www.lerrelpinto.com).
 
 <br/>
 
@@ -26,6 +29,11 @@ I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https
 <br/>
 
 # 🏢 Experiences
+
+- **New York University**, New York, NY
+  - Visiting Student
+  - Advisor: Prof. Lerrel Pinto
+  - Apr. 2025 - Sep. 2025
 - **Naver Clova**, Seongnam, South Korea
   - Research Intern
   - Jul. 2022 - Jan. 2023
@@ -34,8 +42,8 @@ I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https
 
 # ✏️ Academic Services
 - Conference
-  - BMVC, ECCV
+  - BMVC, ACCV, ECCV, ICLR, CVPR
 - Journal
-  - TPAMI
+  - TPAMI, IJCV
 
 <!-- # ✏️ Academic Activities -->
