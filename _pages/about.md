@@ -11,7 +11,7 @@ redirect_from:
 I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/). 
 Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 
-MY research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
+My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
 I actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on Learning from Video in Robotics.
 Additionally, I will be joining NYU as a visiting student under the supervision of [Prof. Lerrel Pinto](https://www.lerrelpinto.com).
 
