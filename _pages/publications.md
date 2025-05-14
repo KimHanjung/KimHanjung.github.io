@@ -15,9 +15,32 @@ author_profile: true
     <p>
       <b> Imitating Human Videos via Cross-Embodiment Skill Representations </b><br />
       <span style="font-size:75%;color:grey"> <b>Hanjung Kim$^*$</b>, Jaehyun Kang$^*$, Hyolim Kang, Meedeum Cho, Seon Joo Kim, Youngwoon Lee </span> <br />
-      <span style="font-size:75%"> <b>Under Review</b> </span> <br />
+      <span style="font-size:75%"> <b>Preprint</b> </span> <br />
       <span style="font-size:75%">
-        <a href="./">[Paper(TBD)]</a>
+        <a href="https://kimhanjung.github.io/UniSkill/">[Project]</a>
+        <a href="https://arxiv.org/pdf/2505.08787">[Paper]</a>
+        <a href="https://github.com/KimHanjung/UniSkill">[Code]</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<br/>
+
+<div class="row">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+      <div style="text-align: center;">
+      <img src="../images/pip.png" alt="main" style="width: 80%; height: auto;">
+      </div>
+  </div>
+  <div class="column right">
+    <p>
+      <b> PIP: Patch-Wise Iterative Prompting for High-Resolution GUI Grounding</b><br />
+      <span style="font-size:75%;color:grey"> Jaeseong Lee$^*$, Yeeun Choi$^*$, Heechan Choi$^*$, <b>Hanjung Kim</b>, Seon Joo Kim </span> <br />
+      <span style="font-size:75%"> <b>CVPRW 2025</b> </span> <br />
+      <span style="font-size:75%">
+        <a href="https://kimhanjung.github.io/publications">[Paper (TBD)]</a>
       </span>
     </p>
   </div>

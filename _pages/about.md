@@ -12,8 +12,10 @@ I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https
 Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 
 My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
-I actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on Learning from Video in Robotics.
-Additionally, I will be joining NYU as a visiting student under the supervision of [Prof. Lerrel Pinto](https://www.lerrelpinto.com).
+I am particularly interested in leveraging <i>in-the-wild</i> human videos to teach robots everyday tasks, starting from simple actions such as pick-and-place and progressing toward more complex behaviors.
+
+Currently, I am working with [Prof. Lerrel Pinto](https://www.lerrelpinto.com) at NYU to address core challenges in using human videos for robot learning.
+I also actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on learning from video in robotics.
 
 <br/>
 
@@ -42,7 +44,7 @@ Additionally, I will be joining NYU as a visiting student under the supervision 
 
 # ✏️ Academic Services
 - Conference
-  - BMVC, ACCV, ECCV, ICLR, CVPR
+  - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL
 - Journal
   - TPAMI, IJCV
 
