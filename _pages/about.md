@@ -42,6 +42,14 @@ I also actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.
 
 <br/>
 
+# 🏆 Awards and Honors
+- Yonsei Univeristy, Nov. 2024
+  - Academic Research Fellowship
+- Google, Oct. 2024
+  - Google East Asia Student Travel Grants for ECCV 
+
+<br/>
+
 # ✏️ Academic Services
 - Conference
   - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL
