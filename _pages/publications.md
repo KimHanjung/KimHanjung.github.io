@@ -15,8 +15,7 @@ author_profile: true
     <p>
       <b> UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations </b><br />
       <span style="font-size:75%;color:grey"> <b>Hanjung Kim$^*$</b>, Jaehyun Kang$^*$, Hyolim Kang, Meedeum Cho, Seon Joo Kim, Youngwoon Lee </span> <br />
-      <span style="font-size:75%"> <b>CVPRW 2025</b></span>
-      <span style="font-size:75%;color:#89BB6C"> Agents in Interactions, from Humans to Robots Workshop</span><br />
+      <span style="font-size:75%"> <b>CoRL 2025</b> </span> <br />
       <span style="font-size:75%">
         <a href="https://kimhanjung.github.io/UniSkill/">[Project]</a>
         <a href="https://arxiv.org/pdf/2505.08787">[Paper]</a>
@@ -37,12 +36,12 @@ author_profile: true
   </div>
   <div class="column right">
     <p>
-      <b> PIP: Patch-Wise Iterative Prompting for High-Resolution GUI Grounding</b><br />
+      <b> A Training-Free, Task-Agnostic Framework for Enhancing MLLM Performance on High-Resolution Images </b><br />
       <span style="font-size:75%;color:grey"> Jaeseong Lee$^*$, Yeeun Choi$^*$, Heechan Choi$^*$, <b>Hanjung Kim</b>, Seon Joo Kim </span> <br />
       <span style="font-size:75%"> <b>CVPRW 2025</b> </span>
       <span style="font-size:75%;color:#89BB6C"> 2nd Workshop on Emergent Visual Abilities and Limits of Foundation Models Workshop</span><br />
       <span style="font-size:75%">
-        <a href="https://kimhanjung.github.io/publications">[Paper (TBD)]</a>
+        <a href="https://arxiv.org/pdf/2507.10202">[Paper]</a>
       </span>
     </p>
   </div>
