@@ -15,7 +15,7 @@ author_profile: true
     <p>
       <b> Hierarchical Latent Action Model </b><br />
       <span style="font-size:75%;color:grey"> <b>Hanjung Kim</b>, Lerrel Pinto, Seon Joo Kim </span> <br />
-      <span style="font-size:75%"> <b>ICLRW 2026</b> </span> <br />
+      <span style="font-size:75%"> <b>ICLRW 2026</b> </span>
       <span style="font-size:75%;color:#607D8B"> 2nd Workshop on World Models: Understanding, Modelling and Scaling</span><br />
       <span style="font-size:75%">
         <a href="">[Paper]</a>

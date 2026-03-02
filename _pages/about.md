@@ -33,15 +33,15 @@ I've also been fortunate to collaborate with [Prof. Youngwoon Lee](https://young
 
 # 🏢 Experiences
 
-- **NVIDIA GEAR Lab**, Santa Clara, CA
+- <span style="color:#76B900">**NVIDIA GEAR Lab**</span>, Santa Clara, CA
   - Research Scientist Intern
   - Mentors: [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/), [Ruijie Zheng](https://ruijiezheng.com/), [Yuke Zhu](https://yukezhu.me/), [Jim Fan](https://jimfan.me/)
   - March. 2026 - Present
-- **New York University**, New York, NY
+- <span style="color:#57068c">**New York University**</span>, New York, NY
   - Visiting Student
   - Advisor: [Lerrel Pinto](https://www.lerrelpinto.com)
   - Apr. 2025 - Sep. 2025
-- **Naver Clova**, Seongnam, South Korea
+- <span style="color:#03C75A">**Naver Clova**</span>, Seongnam, South Korea
   - Research Intern
   - Jul. 2022 - Jan. 2023
 
