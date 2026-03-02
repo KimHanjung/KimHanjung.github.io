@@ -9,6 +9,24 @@ author_profile: true
 <div class="row">
   <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
+      <img src="../images/hilam.png" alt="main" style="width: 100%; height: auto;">
+  </div>
+  <div class="column right">
+    <p>
+      <b> Hierarchical Latent Action Model </b><br />
+      <span style="font-size:75%;color:grey"> <b>Hanjung Kim</b>, Lerrel Pinto, Seon Joo Kim </span> <br />
+      <span style="font-size:75%"> <b>ICLRW 2026</b> </span> <br />
+      <span style="font-size:75%;color:#607D8B"> 2nd Workshop on World Models: Understanding, Modelling and Scaling</span><br />
+      <span style="font-size:75%">
+        <a href="">[Paper]</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
       <img src="../images/uniskill.png" alt="main" style="width: 100%; height: auto;">
   </div>
   <div class="column right">

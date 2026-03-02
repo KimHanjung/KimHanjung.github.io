@@ -14,8 +14,9 @@ Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
 I am particularly interested in leveraging <i>in-the-wild</i> human videos to teach robots everyday tasks, starting from simple actions such as pick-and-place and progressing toward more complex behaviors.
 
-Currently, I am working with [Prof. Lerrel Pinto](https://www.lerrelpinto.com) at NYU to address core challenges in using human videos for robot learning.
-I also actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on learning from video in robotics.
+I'm currently a Research Scientist Intern at the [NVIDIA GEAR Lab](https://research.nvidia.com/labs/gear/), where I work on scaling robot policy learning from diverse human and robot data.
+Before joining GEAR, I had the opportunity to work with [Prof. Lerrel Pinto](https://www.lerrelpinto.com) at NYU on a range of projects in robot learning.
+I've also been fortunate to collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on learning from video in robotics.
 
 <br/>
 
@@ -32,9 +33,13 @@ I also actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.
 
 # 🏢 Experiences
 
+- **NVIDIA GEAR Lab**, Santa Clara, CA
+  - Research Scientist Intern
+  - Mentors: [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/), [Ruijie Zheng](https://ruijiezheng.com/), [Yuke Zhu](https://yukezhu.me/), [Jim Fan](https://jimfan.me/)
+  - March. 2026 - Present
 - **New York University**, New York, NY
   - Visiting Student
-  - Advisor: Prof. Lerrel Pinto
+  - Advisor: [Lerrel Pinto](https://www.lerrelpinto.com)
   - Apr. 2025 - Sep. 2025
 - **Naver Clova**, Seongnam, South Korea
   - Research Intern
@@ -52,8 +57,8 @@ I also actively collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.
 
 # ✏️ Academic Services
 - Conference
-  - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL
+  - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL, ICRA
 - Journal
-  - TPAMI, IJCV
+  - TPAMI, IJCV, RA-L
 
 <!-- # ✏️ Academic Activities -->
