@@ -18,7 +18,7 @@ author_profile: true
       <span style="font-size:75%"> <b>ICLRW 2026</b> </span>
       <span style="font-size:75%;color:#607D8B"> 2nd Workshop on World Models: Understanding, Modelling and Scaling</span><br />
       <span style="font-size:75%">
-        <a href="">[Paper]</a>
+        <a href="https://arxiv.org/abs/2603.05815">[Paper]</a>
       </span>
     </p>
   </div>
