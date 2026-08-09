@@ -11,6 +11,8 @@ redirect_from:
 I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/). 
 Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 
+<span style="color:#d32f2f"><strong>I am actively seeking Research Scientist positions starting in 2027.</strong></span>
+
 My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
 I am particularly interested in leveraging <i>in-the-wild</i> human videos to teach robots everyday tasks, starting from simple actions such as pick-and-place and progressing toward more complex behaviors.
 
@@ -24,7 +26,7 @@ I've also been fortunate to collaborate with [Prof. Youngwoon Lee](https://young
 
 - **Yonsei University**, Seoul, South Korea
   - Ph.D. in Computer Science
-  - Sep. 2021 - Present
+  - Sep. 2021 - Aug. 2027 (Expected)
 - **Yonsei University**, Seoul, South Korea
   - B.S. in Computer Science
   - Mar. 2017 - Aug. 2021
@@ -47,18 +49,22 @@ I've also been fortunate to collaborate with [Prof. Youngwoon Lee](https://young
 
 <br/>
 
+# ✏️ Academic Services
+- **Organizer**
+  - Workshop
+    - [Scaling H2R](https://scaling-h2r-corl.github.io/) — CoRL 2026 Workshop
+- **Reviewer**
+  - Conference
+    - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL, ICRA, NeurIPS
+  - Journal
+    - TPAMI, IJCV, RA-L
+
+<br/>
+
 # 🏆 Awards and Honors
 - Yonsei University, Nov. 2024
   - Academic Research Fellowship
 - Google, Oct. 2024
   - Google East Asia Student Travel Grants for ECCV 
-
-<br/>
-
-# ✏️ Academic Services
-- Conference
-  - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL, ICRA
-- Journal
-  - TPAMI, IJCV, RA-L
 
 <!-- # ✏️ Academic Activities -->

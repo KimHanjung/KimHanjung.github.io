@@ -9,6 +9,22 @@ author_profile: true
 <div class="row">
   <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
+      <img src="../images/huro.png" alt="HuRo overview" style="width: 100%; height: auto;">
+  </div>
+  <div class="column right">
+    <p>
+      <b> HuRo: Robotizing Human Videos for Scalable VLA Pretraining </b><br />
+      <span style="font-size:75%;color:grey"> Jinho Jeong$^*$, Se June Joo$^*$, Jaehyun Kang, Dongyun Kim, Yena Kim, <b>Hanjung Kim</b>, Seon Joo Kim </span> <br />
+      <span style="font-size:75%"> <b>Under Review, 2026</b> </span>
+    </p>
+  </div>
+</div>
+
+<br/>
+
+<div class="row">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
       <img src="../images/hilam.png" alt="main" style="width: 100%; height: auto;">
   </div>
   <div class="column right">
