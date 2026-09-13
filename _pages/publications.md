@@ -15,7 +15,12 @@ author_profile: true
     <p>
       <b> HuRo: Robotizing Human Videos for Scalable VLA Pretraining </b><br />
       <span style="font-size:75%;color:grey"> Jinho Jeong$^*$, Se June Joo$^*$, Jaehyun Kang, Dongyun Kim, Yena Kim, <b>Hanjung Kim</b>, Seon Joo Kim </span> <br />
-      <span style="font-size:75%"> <b>Under Review, 2026</b> </span>
+      <span style="font-size:75%"> <b>CoRL 2026</b> </span> <br />
+      <span style="font-size:75%">
+        <a href="https://3587jjh.github.io/HuRo/">[Project]</a>
+        <a href="https://arxiv.org/abs/2609.10706">[Paper]</a>
+        <a href="https://github.com/3587jjh/HuRo">[Code]</a>
+      </span>
     </p>
   </div>
 </div>
