@@ -9,7 +9,27 @@ author_profile: true
 <div class="row">
   <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
-      <img src="../images/huro.png" alt="HuRo overview" style="width: 100%; height: auto;">
+      <video src="../images/gr00t2.mp4" poster="../images/gr00t2_poster.jpg" width="640" height="360" autoplay muted loop playsinline aria-label="GR00T 2 teaser: a dexterous robot hand turns the GR00T 1 block into GR00T 2" style="width: 100%; height: auto;"></video>
+  </div>
+  <div class="column right">
+    <p>
+      <b> GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation </b><br />
+      <span style="font-size:75%;color:grey"> NVIDIA </span> <br />
+      <span style="font-size:75%"> <b>Technical Report</b> </span> <br />
+      <span style="font-size:75%">
+        <a href="https://research.nvidia.com/labs/gear/gr00t-2/">[Project]</a>
+        <a href="https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf">[Paper]</a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<br/>
+
+<div class="row">
+  <div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+      <video src="../images/huro.mp4" poster="../images/huro_poster.jpg" width="640" height="360" autoplay muted loop playsinline aria-label="HuRo: egocentric human videos (top) and their robotized versions (bottom)" style="width: 100%; height: auto;"></video>
   </div>
   <div class="column right">
     <p>
@@ -48,7 +68,7 @@ author_profile: true
 <div class="row">
   <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
-      <img src="../images/uniskill.png" alt="main" style="width: 100%; height: auto;">
+      <video src="../images/uniskill.mp4" poster="../images/uniskill_poster.jpg" width="640" height="360" autoplay muted loop playsinline aria-label="UniSkill teaser: human and robot videos from different embodiments form large-scale video datasets, from which UniSkill learns universal skill representations" style="width: 100%; height: auto;"></video>
   </div>
   <div class="column right">
     <p>
