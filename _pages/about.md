@@ -1,70 +1,21 @@
 ---
 permalink: /
+layout: console
 title: 'Hanjung Kim'
-excerpt: 'About me'
-author_profile: true
+description: 'Hanjung Kim — Ph.D. student at Yonsei University and Research Scientist Intern at NVIDIA GEAR Lab, working on robot learning from in-the-wild human videos.'
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/). 
+I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/).
 Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 
-<span style="color:#d32f2f"><strong>I am actively seeking Research Scientist positions starting in 2027.</strong></span>
+<p class="callout"><strong>I am actively seeking Research Scientist positions starting in 2027.</strong></p>
 
-My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥	.
+My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥.
 I am particularly interested in leveraging <i>in-the-wild</i> human videos to teach robots everyday tasks, starting from simple actions such as pick-and-place and progressing toward more complex behaviors.
 
 I'm currently a Research Scientist Intern at the [NVIDIA GEAR Lab](https://research.nvidia.com/labs/gear/), where I work on scaling robot policy learning from diverse human and robot data.
 Before joining GEAR, I had the opportunity to work with [Prof. Lerrel Pinto](https://www.lerrelpinto.com) at NYU on a range of projects in robot learning.
 I've also been fortunate to collaborate with [Prof. Youngwoon Lee](https://youngwoon.github.io) on learning from video in robotics.
-
-<br/>
-
-# 🏫 Education
-
-- **Yonsei University**, Seoul, South Korea
-  - Ph.D. in Computer Science
-  - Sep. 2021 - Aug. 2027 (Expected)
-- **Yonsei University**, Seoul, South Korea
-  - B.S. in Computer Science
-  - Mar. 2017 - Aug. 2021
-
-<br/>
-
-# 🏢 Experiences
-
-- <span style="color:#76B900">**NVIDIA GEAR Lab**</span>, Santa Clara, CA
-  - Research Scientist Intern
-  - Mentors: [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/), [Ruijie Zheng](https://ruijiezheng.com/), [Yuke Zhu](https://yukezhu.me/), [Jim Fan](https://jimfan.me/)
-  - March. 2026 - Present
-- <span style="color:#57068c">**New York University**</span>, New York, NY
-  - Visiting Student
-  - Advisor: [Lerrel Pinto](https://www.lerrelpinto.com)
-  - Apr. 2025 - Sep. 2025
-- <span style="color:#03C75A">**Naver Clova**</span>, Seongnam, South Korea
-  - Research Intern
-  - Jul. 2022 - Jan. 2023
-
-<br/>
-
-# ✏️ Academic Services
-- **Organizer**
-  - Workshop
-    - [Scaling H2R](https://scaling-h2r-corl.github.io/) — CoRL 2026 Workshop
-- **Reviewer**
-  - Conference
-    - BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL, ICRA, NeurIPS
-  - Journal
-    - TPAMI, IJCV, RA-L
-
-<br/>
-
-# 🏆 Awards and Honors
-- Yonsei University, Nov. 2024
-  - Academic Research Fellowship
-- Google, Oct. 2024
-  - Google East Asia Student Travel Grants for ECCV 
-
-<!-- # ✏️ Academic Activities -->

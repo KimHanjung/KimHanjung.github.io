@@ -1,0 +1,13 @@
+# Academic service. Each role has groups; an item is plain text or a {name, url, note} entry.
+- role: Organizer
+  groups:
+    - kind: Workshop
+      items:
+        - { name: Scaling H2R, url: "https://scaling-h2r-corl.github.io/", note: "CoRL 2026 Workshop" }
+
+- role: Reviewer
+  groups:
+    - kind: Conference
+      items: [BMVC, ACCV, ECCV, ICLR, CVPR, ICCV, CoRL, ICRA, NeurIPS]
+    - kind: Journal
+      items: [TPAMI, IJCV, RA-L]

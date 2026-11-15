@@ -1,0 +1,6 @@
+<header class="sec-head">
+  <span class="sec-index" aria-hidden="true">{{ include.index }}</span>
+  <h2 id="{{ include.id }}-title">{{ include.title }}</h2>
+  {%- if include.count %}<span class="sec-count" aria-hidden="true">[{{ include.count }}]</span>{% endif %}
+  <span class="sec-rule" aria-hidden="true"></span>
+</header>

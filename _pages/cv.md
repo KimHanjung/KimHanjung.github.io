@@ -1,14 +1,18 @@
 ---
-layout: archive
+layout: console-page
 title: 'Curriculum Vitae'
+index: 'CV'
 permalink: /cv/
-author_profile: true
+description: 'Curriculum vitae of Hanjung Kim.'
 redirect_from:
   - /resume
 ---
-``
-📝 Can be a bit outdated
-``
-
-<!-- <embed src="../files/CV_20231226.pdf" type="application/pdf" width="100%" height="800px" /> -->
-<iframe src="../files/cv_20260302.pdf" title="example" width="100%" height="1200" frameborder="0"></iframe>
+{%- assign cv = site.data.profile.cv | relative_url -%}
+<div class="cv-bar">
+  <p class="cv-note">📝 Can be a bit outdated</p>
+  <a class="btn" href="{{ cv }}" download>download pdf</a>
+  <a class="btn" href="{{ cv }}" rel="noopener">open in new tab</a>
+</div>
+<div class="cv-frame">
+  <iframe src="{{ cv }}" title="Curriculum vitae of {{ site.data.profile.name }} (PDF)"></iframe>
+</div>

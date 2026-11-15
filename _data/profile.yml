@@ -1,0 +1,32 @@
+# Profile shown in the console header and hero.
+# Text here is edited by hand; the robot viewport reads `blocks` for the letter blocks.
+name: Hanjung Kim
+handle: hanjung_kim
+headline: Ph.D. student @ Yonsei University
+# One-line research summary under the name (edit freely).
+tagline: Teaching robots everyday skills from in-the-wild human videos.
+avatar: /images/hanjung_480.jpg
+location: Santa Clara, CA
+email: hanjungkim@yonsei.ac.kr
+cv: /files/cv_20260302.pdf
+status: Seeking Research Scientist positions starting in 2027
+roles:
+  - title: Ph.D. student
+    org: Yonsei University
+  - title: Research Scientist Intern
+    org: NVIDIA GEAR Lab
+links:
+  - label: Email
+    url: "mailto:hanjungkim@yonsei.ac.kr"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?hl=en&user=-c22oFIAAAAJ"
+  - label: GitHub
+    url: "https://github.com/KimHanjung"
+  - label: Twitter
+    url: "https://twitter.com/KimD0ing"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/hanjung-kim-060436191"
+# Letter blocks on the robot's table (one row per entry; keep each row at most 8 letters).
+blocks:
+  - HANJUNG
+  - KIM

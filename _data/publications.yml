@@ -1,0 +1,114 @@
+# Publications, newest first. Authors ending in "*" are marked as equal contribution;
+# the profile name is highlighted automatically.
+# media.type is "video" (with a poster) or "image".
+- id: gr00t2
+  short: GR00T 2
+  title: "GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation"
+  authors: ["NVIDIA"]
+  venue: Technical Report
+  links:
+    - { label: Project, url: "https://research.nvidia.com/labs/gear/gr00t-2/" }
+    - { label: Paper, url: "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf" }
+  media:
+    type: video
+    src: /images/gr00t2.mp4
+    poster: /images/gr00t2_poster.jpg
+    alt: "GR00T 2 teaser: a dexterous robot hand turns the GR00T 1 block into GR00T 2"
+
+- id: huro
+  short: HuRo
+  title: "HuRo: Robotizing Human Videos for Scalable VLA Pretraining"
+  authors: ["Jinho Jeong*", "Se June Joo*", "Jaehyun Kang", "Dongyun Kim", "Yena Kim", "Hanjung Kim", "Seon Joo Kim"]
+  venue: CoRL 2026
+  links:
+    - { label: Project, url: "https://3587jjh.github.io/HuRo/" }
+    - { label: Paper, url: "https://arxiv.org/abs/2609.10706" }
+    - { label: Code, url: "https://github.com/3587jjh/HuRo" }
+  media:
+    type: video
+    src: /images/huro.mp4
+    poster: /images/huro_poster.jpg
+    alt: "HuRo: egocentric human videos (top) and their robotized versions (bottom)"
+
+- id: hilam
+  short: HiLAM
+  title: "Hierarchical Latent Action Model"
+  authors: ["Hanjung Kim", "Lerrel Pinto", "Seon Joo Kim"]
+  venue: ICLRW 2026
+  note: "2nd Workshop on World Models: Understanding, Modelling and Scaling"
+  links:
+    - { label: Paper, url: "https://arxiv.org/abs/2603.05815" }
+  media:
+    type: image
+    src: /images/hilam.png
+    alt: "Hierarchical Latent Action Model overview"
+
+- id: uniskill
+  short: UniSkill
+  title: "UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations"
+  authors: ["Hanjung Kim*", "Jaehyun Kang*", "Hyolim Kang", "Meedeum Cho", "Seon Joo Kim", "Youngwoon Lee"]
+  venue: CoRL 2025
+  links:
+    - { label: Project, url: "https://kimhanjung.github.io/UniSkill/" }
+    - { label: Paper, url: "https://arxiv.org/pdf/2505.08787" }
+    - { label: Code, url: "https://github.com/KimHanjung/UniSkill" }
+  media:
+    type: video
+    src: /images/uniskill.mp4
+    poster: /images/uniskill_poster.jpg
+    alt: "UniSkill teaser: human and robot videos from different embodiments form large-scale video datasets, from which UniSkill learns universal skill representations"
+
+- id: hires-mllm
+  short: Hi-Res MLLM
+  title: "A Training-Free, Task-Agnostic Framework for Enhancing MLLM Performance on High-Resolution Images"
+  authors: ["Jaeseong Lee*", "Yeeun Choi*", "Heechan Choi*", "Hanjung Kim", "Seon Joo Kim"]
+  venue: CVPRW 2025
+  note: "2nd Workshop on Emergent Visual Abilities and Limits of Foundation Models Workshop"
+  links:
+    - { label: Paper, url: "https://arxiv.org/pdf/2507.10202" }
+  media:
+    type: image
+    src: /images/pip.png
+    alt: "Training-free framework for high-resolution MLLM inputs"
+
+- id: visage
+  short: VISAGE
+  title: "VISAGE: Video Instance Segmentation with Appearance-Guided Enhancement"
+  authors: ["Hanjung Kim", "Jaehyun Kang", "Miran Heo", "Sukjun Hwang", "Seoung Wug Oh", "Seon Joo Kim"]
+  venue: ECCV 2024
+  links:
+    - { label: Project, url: "https://kimhanjung.github.io/VISAGE/" }
+    - { label: Paper, url: "https://arxiv.org/pdf/2312.04885.pdf" }
+    - { label: Code, url: "https://github.com/KimHanjung/VISAGE" }
+  media:
+    type: image
+    src: /images/visage.png
+    alt: "VISAGE architecture overview"
+
+- id: sola
+  short: SoLa
+  title: "Soft-Landing Strategy for Alleviating the Task Discrepancy Problem in Temporal Action Localization Tasks"
+  authors: ["Hyolim Kang", "Hanjung Kim", "Joungbin An", "Minsu Cho", "Seon Joo Kim"]
+  venue: CVPR 2023
+  note: "Finalist at Qualcomm Innovation Fellowship 2023"
+  note_kind: award
+  links:
+    - { label: Paper, url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Kang_Soft-Landing_Strategy_for_Alleviating_the_Task_Discrepancy_Problem_in_Temporal_CVPR_2023_paper.pdf" }
+    - { label: Code, url: "https://github.com/musicalOffering/sola" }
+  media:
+    type: image
+    src: /images/sola.png
+    alt: "Soft-Landing strategy overview"
+
+- id: genvis
+  short: GenVIS
+  title: "A Generalized Framework for Video Instance Segmentation"
+  authors: ["Miran Heo", "Sukjun Hwang", "Jeongseok Hyun", "Hanjung Kim", "Seoung Wug Oh", "Joon-Young Lee", "Seon Joo Kim"]
+  venue: CVPR 2023
+  links:
+    - { label: Paper, url: "https://openaccess.thecvf.com/content/CVPR2023/html/Heo_A_Generalized_Framework_for_Video_Instance_Segmentation_CVPR_2023_paper.html" }
+    - { label: Code, url: "https://github.com/miranheo/GenVIS" }
+  media:
+    type: image
+    src: /images/genvis.png
+    alt: "GenVIS framework overview"

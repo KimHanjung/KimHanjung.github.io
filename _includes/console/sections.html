@@ -1,0 +1,74 @@
+<section id="experience" class="section" aria-labelledby="experience-title">
+  {% include console/section-head.html id="experience" index="03" title="Experiences" %}
+  <ol class="timeline">
+    {%- for e in site.data.experience %}
+    <li class="tl-item" style="--org: {{ e.color }}">
+      <p class="tl-period">{{ e.period }}</p>
+      <div class="tl-body">
+        <h3 class="tl-org"><span class="org-dot" aria-hidden="true"></span>{{ e.org }}</h3>
+        <p class="tl-role">{{ e.role }} <span class="tl-loc">· {{ e.location }}</span></p>
+        {%- if e.people %}
+        <p class="tl-people"><span class="tl-key">{{ e.people_label }}</span>
+          {%- for p in e.people %} <a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% unless forloop.last %},{% endunless %}{% endfor %}
+        </p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+
+<section id="education" class="section" aria-labelledby="education-title">
+  {% include console/section-head.html id="education" index="04" title="Education" %}
+  <ol class="timeline">
+    {%- for e in site.data.education %}
+    <li class="tl-item">
+      <p class="tl-period">{{ e.period }}</p>
+      <div class="tl-body">
+        <h3 class="tl-org"><span class="org-dot" aria-hidden="true"></span>{{ e.school }}</h3>
+        <p class="tl-role">{{ e.degree }} <span class="tl-loc">· {{ e.location }}</span></p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+
+<section id="service" class="section" aria-labelledby="service-title">
+  {% include console/section-head.html id="service" index="05" title="Academic Services" %}
+  <dl class="service">
+    {%- for s in site.data.service %}
+    <div class="svc-role">
+      <dt>{{ s.role }}</dt>
+      {%- for g in s.groups %}
+      <dd>
+        <span class="svc-kind">{{ g.kind }}</span>
+        <ul class="svc-items">
+          {%- for it in g.items %}
+          {%- if it.name %}
+          <li><a href="{{ it.url }}" rel="noopener">{{ it.name }}</a>{% if it.note %} <span class="svc-note">— {{ it.note }}</span>{% endif %}</li>
+          {%- else %}
+          <li class="chip">{{ it }}</li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+      </dd>
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+  </dl>
+</section>
+
+<section id="awards" class="section" aria-labelledby="awards-title">
+  {% include console/section-head.html id="awards" index="06" title="Awards and Honors" %}
+  <ol class="timeline awards">
+    {%- for a in site.data.awards %}
+    <li class="tl-item">
+      <p class="tl-period">{{ a.date }}</p>
+      <div class="tl-body">
+        <h3 class="tl-org"><span class="org-dot" aria-hidden="true"></span>{{ a.title }}</h3>
+        <p class="tl-role">{{ a.org }}</p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>

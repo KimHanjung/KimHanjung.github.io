@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+{% include console/head.html %}
+</head>
+<body class="page-console">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include console/topbar.html %}
+
+  <div class="console">
+    {% include console/hero.html %}
+    {% include console/bay.html %}
+
+    <main id="main" class="feed">
+      <section id="about" class="section" aria-labelledby="about-title">
+        {% include console/section-head.html id="about" index="01" title="About" %}
+        <div class="prose">
+          {{ content }}
+        </div>
+      </section>
+
+      {% include console/publications.html %}
+      {% include console/sections.html %}
+
+      <footer class="site-foot">
+        <p>© {{ site.time | date: '%Y' }} {{ site.data.profile.name }} <span class="dim">·</span> built with Jekyll &amp; three.js</p>
+        <p class="dim">last build {{ site.time | date: '%Y-%m-%d' }}</p>
+      </footer>
+    </main>
+  </div>
+
+  <div class="detect" data-detect hidden aria-hidden="true">
+    <span class="dc tl"></span><span class="dc tr"></span><span class="dc bl"></span><span class="dc br"></span>
+    <span class="detect-label" data-detect-label></span>
+  </div>
+  <svg class="beam-layer" data-beam aria-hidden="true" focusable="false">
+    <line class="beam-glow" x1="0" y1="0" x2="0" y2="0"></line>
+    <line class="beam" x1="0" y1="0" x2="0" y2="0"></line>
+    <circle class="beam-a" r="4" cx="0" cy="0"></circle>
+    <circle class="beam-b" r="3" cx="0" cy="0"></circle>
+  </svg>
+</body>
+</html>

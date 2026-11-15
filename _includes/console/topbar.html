@@ -1,0 +1,27 @@
+{%- assign profile = site.data.profile -%}
+{%- assign home = '/' | relative_url -%}
+<header class="topbar">
+  <a class="brand" href="{{ home }}#top" aria-label="{{ profile.name }}, home">
+    <span class="brand-mark" aria-hidden="true">HK</span>
+    <span class="brand-path"><span class="dim">~/</span>{{ profile.handle }}<span class="caret" aria-hidden="true"></span></span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="{{ home }}#about" data-nav="about">about</a>
+    <a href="{{ home }}#publications" data-nav="publications">publications</a>
+    <a href="{{ home }}#experience" data-nav="experience">experience</a>
+    <a href="{{ home }}#education" data-nav="education">education</a>
+    <a href="{{ home }}#service" data-nav="service">service</a>
+    <a href="{{ home }}#awards" data-nav="awards">awards</a>
+    <a href="{{ '/cv/' | relative_url }}" data-nav="cv"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>cv</a>
+  </nav>
+  <div class="topbar-tools">
+    <span class="sys" title="All systems nominal"><span class="sys-dot" aria-hidden="true"></span><span class="sys-label">online</span></span>
+    <button class="icon-btn motion-toggle" type="button" data-motion-toggle aria-pressed="false" aria-label="Pause animations" title="Pause animations">
+      <svg class="i-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
+      <svg class="i-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+    </button>
+    <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>

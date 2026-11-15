@@ -1,0 +1,27 @@
+# Experience, newest first. `color` is the organization's brand color (used for the marker).
+- org: NVIDIA GEAR Lab
+  color: "#76B900"
+  location: Santa Clara, CA
+  role: Research Scientist Intern
+  people_label: Mentors
+  people:
+    - { name: Danfei Xu, url: "https://faculty.cc.gatech.edu/~danfei/" }
+    - { name: Ruijie Zheng, url: "https://ruijiezheng.com/" }
+    - { name: Yuke Zhu, url: "https://yukezhu.me/" }
+    - { name: Jim Fan, url: "https://jimfan.me/" }
+  period: Mar. 2026 – Present
+
+- org: New York University
+  color: "#57068c"
+  location: New York, NY
+  role: Visiting Student
+  people_label: Advisor
+  people:
+    - { name: Lerrel Pinto, url: "https://www.lerrelpinto.com" }
+  period: Apr. 2025 – Sep. 2025
+
+- org: Naver Clova
+  color: "#03C75A"
+  location: Seongnam, South Korea
+  role: Research Intern
+  period: Jul. 2022 – Jan. 2023
