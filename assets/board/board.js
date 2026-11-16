@@ -458,6 +458,8 @@ function setupCloseup(board) {
     el.frame.classList.toggle('is-video', video);
     el.frame.classList.toggle('is-image', !video);
     el.frame.style.setProperty('--ar', String((Number(m.width) || 16) / (Number(m.height) || 9)));
+    // the poster stays behind the video, so it never flashes black before its first frame
+    el.frame.style.setProperty('--poster', video && m.poster ? `url("${url(m.poster)}")` : 'none');
     const old = $('video', el.slot);
     if (old) { old.pause(); old.removeAttribute('src'); old.load(); }
     el.slot.replaceChildren();

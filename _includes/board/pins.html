@@ -50,7 +50,7 @@
             <p class="pin-noteline{% if pub.note_kind %} is-{{ pub.note_kind }}{% endif %}">{{ pub.note }}</p>
             {%- endif %}
           </div>
-          <div class="pin-visual is-{{ pub.media.type }}">
+          <div class="pin-visual is-{{ pub.media.type }}"{% if pub.media.type == 'video' %} style="--poster: url('{{ pub.media.poster | relative_url }}')"{% endif %}>
             {%- if pub.media.type == 'video' %}
             <video src="{{ pub.media.src | relative_url }}" poster="{{ pub.media.poster | relative_url }}" width="{{ mw }}" height="{{ mh }}" muted loop playsinline preload="none" data-lazy aria-label="{{ pub.media.alt | escape }}"></video>
             {%- else %}

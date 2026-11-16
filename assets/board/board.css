@@ -374,7 +374,9 @@ kbd { font-family: var(--font-mono); }
   aspect-ratio: 16 / 9; border-radius: var(--r-pin);
   background: var(--mat);
 }
-.pin-visual.is-video { background: var(--media-bg); }
+/* the poster sits behind the video too: while a browser has no decoded frame to show (just started, paused
+   before the first frame, looping, resuming), the video is transparent, and this keeps that from reading as black */
+.pin-visual.is-video { background: var(--media-bg) var(--poster, none) center / cover no-repeat; }
 .pin-visual::before {
   /* hairline edge drawn above the media, so white figures and white video frames keep their outline */
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; border-radius: inherit;
@@ -555,6 +557,7 @@ html:not(.js) .pin-actions { opacity: 1; transform: none; }
   background: var(--mat);
 }
 .cu-frame.is-video { background: var(--media-bg); }
+.cu-frame.is-video .cu-slot { background: var(--poster, none) center / contain no-repeat; }
 .cu-frame::before {
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; border-radius: inherit;
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--fg) 8%, transparent);

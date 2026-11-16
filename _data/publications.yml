@@ -4,6 +4,8 @@
 # - media.type is "video" (with a poster) or "image". Board thumbnails share one 16:9 frame;
 #   media.width/height are the file's pixel size and shape the detail view (16:9 if left out).
 # - tags power search and "More like this" in the pin's detail view.
+# - Videos: keep the encoding web-friendly (see the commit that added `?v=2`): H.264 4:2:0, no B-frames,
+#   a keyframe every 2 s. When a file is replaced, bump its `?v=` so browsers fetch it afresh.
 - id: gr00t2
   short: GR00T 2
   title: "GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation"
@@ -16,8 +18,8 @@
     - { label: Paper, url: "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf" }
   media:
     type: video
-    src: /images/gr00t2.mp4
-    poster: /images/gr00t2_poster.jpg
+    src: /images/gr00t2.mp4?v=2
+    poster: /images/gr00t2_poster.jpg?v=2
     width: 640
     height: 360
     alt: "GR00T 2 teaser: a dexterous robot hand turns the GR00T 1 block into GR00T 2"
@@ -35,8 +37,8 @@
     - { label: Code, url: "https://github.com/3587jjh/HuRo" }
   media:
     type: video
-    src: /images/huro.mp4
-    poster: /images/huro_poster.jpg
+    src: /images/huro.mp4?v=2
+    poster: /images/huro_poster.jpg?v=2
     width: 640
     height: 360
     alt: "HuRo: egocentric human videos (top) and their robotized versions (bottom)"
@@ -71,8 +73,8 @@
     - { label: Code, url: "https://github.com/KimHanjung/UniSkill" }
   media:
     type: video
-    src: /images/uniskill.mp4
-    poster: /images/uniskill_poster.jpg
+    src: /images/uniskill.mp4?v=2
+    poster: /images/uniskill_poster.jpg?v=2
     width: 640
     height: 360
     alt: "UniSkill teaser: human and robot videos from different embodiments form large-scale video datasets, from which UniSkill learns universal skill representations"
