@@ -1,7 +1,10 @@
 # Experience, newest first. `color` is the organization's brand color (the pin's cover).
+# `location` is one line, or a list with one line per stint; text after " · " is that stint's dates.
 - org: NVIDIA GEAR Lab
   color: "#76B900"
-  location: Santa Clara, CA
+  location:
+    - Santa Clara, CA · Mar. – Sep. 2026
+    - Remote from Seoul · Oct. 2026 – Present
   role: Research Scientist Intern
   people_label: Mentors
   people:

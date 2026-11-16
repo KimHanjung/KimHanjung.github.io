@@ -86,7 +86,7 @@
           </div>
           <div class="org-body">
             <p class="org-role">{{ e.role }}</p>
-            <p class="org-meta">{{ e.location }}</p>
+            <p class="org-meta">{% for l in e.location %}{% assign parts = l | split: ' · ' %}<span class="org-stint">{{ parts[0] }}{% if parts[1] %} <span class="org-when">{{ parts[1] }}</span>{% endif %}</span>{% endfor %}</p>
             {%- if e.people %}
             <p class="org-people"><span class="org-key">{{ e.people_label }}</span>
               {%- for p in e.people %} <a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% unless forloop.last %},{% endunless %}{% endfor %}
@@ -112,7 +112,7 @@
           </div>
           <div class="org-body">
             <p class="org-role">{{ e.degree }}</p>
-            <p class="org-meta">{{ e.location }}</p>
+            <p class="org-meta">{% for l in e.location %}{% assign parts = l | split: ' · ' %}<span class="org-stint">{{ parts[0] }}{% if parts[1] %} <span class="org-when">{{ parts[1] }}</span>{% endif %}</span>{% endfor %}</p>
           </div>
         </li>
         {%- endfor %}

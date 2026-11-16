@@ -495,6 +495,9 @@ html:not(.js) .pin-actions { opacity: 1; transform: none; }
 .org-body { display: grid; gap: 5px; padding: 14px 18px 17px; }
 .org-role { font: 600 15px/1.35 var(--font-sans); color: var(--fg); }
 .org-meta { font: 12px/1.55 var(--font-mono); color: var(--muted); }
+.org-stint { display: block; }
+.org-stint + .org-stint { margin-top: 5px; }
+.org-when { display: block; font-size: 11px; opacity: .85; }
 .org-people { margin-top: 3px; font-size: 13.5px; line-height: 1.55; color: var(--fg-2); }
 .org-people a, .svc-link a {
   color: var(--fg); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px;
