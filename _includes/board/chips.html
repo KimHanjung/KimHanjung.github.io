@@ -1,0 +1,13 @@
+{%- assign d = site.data -%}
+{%- assign n_all = d.publications.size | plus: d.experience.size | plus: d.education.size | plus: d.service.size | plus: d.awards.size -%}
+<span class="chips-sentinel" aria-hidden="true" data-chips-sentinel></span>
+<nav class="chips-bar" aria-label="Filter pins" data-chips-bar>
+  <div class="chips" data-chips>
+    <a class="chip" href="#about" data-filter="all" aria-current="true">All <span class="chip-n" data-count="all">{{ n_all }}</span></a>
+    <a class="chip" href="#publications" data-filter="publications">Publications <span class="chip-n" data-count="publications">{{ d.publications.size }}</span></a>
+    <a class="chip" href="#experience" data-filter="experience">Experience <span class="chip-n" data-count="experience">{{ d.experience.size }}</span></a>
+    <a class="chip" href="#education" data-filter="education">Education <span class="chip-n" data-count="education">{{ d.education.size }}</span></a>
+    <a class="chip" href="#service" data-filter="service">Service <span class="chip-n" data-count="service">{{ d.service.size }}</span></a>
+    <a class="chip" href="#awards" data-filter="awards">Awards <span class="chip-n" data-count="awards">{{ d.awards.size }}</span></a>
+  </div>
+</nav>

@@ -1,0 +1,178 @@
+{%- assign profile = site.data.profile -%}
+{%- assign me = profile.name -%}
+{%- assign d = site.data -%}
+{%- assign pub_groups = d.publications | group_by: "topic" -%}
+{%- comment -%}
+  The board is a column of sections. Experience + Education and Service + Awards share a row on
+  wide screens; --n is the number of card columns a section asks for (its card count, at most 4).
+{%- endcomment -%}
+<div class="board" id="content" tabindex="-1" data-board>
+  <section class="sec sec-about" data-sec="about" aria-labelledby="sec-about">
+    <header class="sec-head"><h2 class="sec-title" id="sec-about">About</h2></header>
+    <div class="about-card prose">
+      {{ include.about }}
+    </div>
+  </section>
+
+  {%- if d.publications.size > 0 %}
+  <section class="sec" id="publications" data-sec="publications" aria-labelledby="sec-publications">
+    <header class="sec-head">
+      <h2 class="sec-title" id="sec-publications">Publications <span class="sec-n" data-sec-n>{{ d.publications.size }}</span></h2>
+      <p class="sec-note" data-legend><sup>*</sup> equal contribution</p>
+    </header>
+    {%- assign n = 0 %}
+    {%- for g in pub_groups %}
+    <div class="group" data-group>
+      {%- if g.name != "" %}
+      <h3 class="group-title">{{ g.name }} <span class="group-n" data-group-n>{{ g.items.size }}</span></h3>
+      {%- endif %}
+      <ul class="grid grid-papers">
+        {%- for pub in g.items %}
+        {%- assign n = n | plus: 1 %}
+        {%- capture idx %}{% if n < 10 %}0{% endif %}{{ n }}{% endcapture %}
+        {%- assign mw = pub.media.width | default: 16 %}
+        {%- assign mh = pub.media.height | default: 9 %}
+        {%- assign primary = pub.links | where: "label", "Paper" | first %}
+        {%- unless primary %}{% assign primary = pub.links | first %}{% endunless %}
+        <li class="pin pin-paper" id="pin-{{ pub.id }}" data-kind="publications" data-id="{{ pub.id }}" data-tags="{{ pub.tags | join: '|' }}">
+          <div class="pin-body">
+            <h4 class="pin-title"><a class="pin-open" href="#pin-{{ pub.id }}" data-open="{{ pub.id }}">{{ pub.title }}</a></h4>
+            <p class="pin-authors">
+              {%- for a in pub.authors -%}
+                {%- assign name = a | remove: '*' -%}
+                {%- if name == me -%}<strong class="me">{{ name }}</strong>{%- else -%}{{ name }}{%- endif -%}
+                {%- if a contains '*' -%}<sup>*</sup>{%- endif -%}
+                {%- unless forloop.last %}, {% endunless -%}
+              {%- endfor -%}
+            </p>
+            <p class="pin-meta"><span class="venue">{{ pub.venue }}</span></p>
+            {%- if pub.note %}
+            <p class="pin-noteline{% if pub.note_kind %} is-{{ pub.note_kind }}{% endif %}">{{ pub.note }}</p>
+            {%- endif %}
+          </div>
+          <div class="pin-visual is-{{ pub.media.type }}">
+            {%- if pub.media.type == 'video' %}
+            <video src="{{ pub.media.src | relative_url }}" poster="{{ pub.media.poster | relative_url }}" width="{{ mw }}" height="{{ mh }}" muted loop playsinline preload="none" data-lazy aria-label="{{ pub.media.alt | escape }}"></video>
+            <span class="pin-badge" aria-hidden="true" data-dur hidden></span>
+            {%- else %}
+            <img src="{{ pub.media.src | relative_url }}" alt="{{ pub.media.alt | escape }}" width="{{ mw }}" height="{{ mh }}" loading="lazy" decoding="async">
+            {%- endif %}
+            <span class="det" aria-hidden="true"><i></i><i></i><i></i><i></i><b>pub_{{ idx }} · {{ pub.short }}</b></span>
+            <span class="pin-actions">
+              {%- for l in pub.links %}{% unless l.label == primary.label %}
+              <a class="act" href="{{ l.url }}" rel="noopener">{{ l.label }}<span class="sr-only"> · {{ pub.short }}</span></a>
+              {%- endunless %}{% endfor %}
+              <a class="act is-primary" href="{{ primary.url }}" rel="noopener">{{ primary.label }}<span class="sr-only"> · {{ pub.short }}</span><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M8 16 16 8M9.5 8H16v6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </span>
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </section>
+  {%- endif %}
+
+  <div class="sec-row" data-sec-row>
+    {%- if d.experience.size > 0 %}
+    {%- assign cols = d.experience.size | at_most: 4 %}
+    <section class="sec" id="experience" data-sec="experience" aria-labelledby="sec-experience" style="--n: {{ cols }}">
+      <header class="sec-head"><h2 class="sec-title" id="sec-experience">Experience <span class="sec-n" data-sec-n>{{ d.experience.size }}</span></h2></header>
+      <ul class="grid grid-cards">
+        {%- for e in d.experience %}
+        <li class="pin pin-org" data-kind="experience" style="--org: {{ e.color | default: '#76b900' }}">
+          <div class="org-cover">
+            <h3 class="org-name">{{ e.org }}</h3>
+            <p class="kicker">{{ e.period }}</p>
+          </div>
+          <div class="org-body">
+            <p class="org-role">{{ e.role }}</p>
+            <p class="org-meta">{{ e.location }}</p>
+            {%- if e.people %}
+            <p class="org-people"><span class="org-key">{{ e.people_label }}</span>
+              {%- for p in e.people %} <a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% unless forloop.last %},{% endunless %}{% endfor %}
+            </p>
+            {%- endif %}
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
+    {%- if d.education.size > 0 %}
+    {%- assign cols = d.education.size | at_most: 4 %}
+    <section class="sec" id="education" data-sec="education" aria-labelledby="sec-education" style="--n: {{ cols }}">
+      <header class="sec-head"><h2 class="sec-title" id="sec-education">Education <span class="sec-n" data-sec-n>{{ d.education.size }}</span></h2></header>
+      <ul class="grid grid-cards">
+        {%- for e in d.education %}
+        <li class="pin pin-org" data-kind="education" style="--org: {{ e.color | default: '#1f3b70' }}">
+          <div class="org-cover">
+            <h3 class="org-name">{{ e.school }}</h3>
+            <p class="kicker">{{ e.period }}</p>
+          </div>
+          <div class="org-body">
+            <p class="org-role">{{ e.degree }}</p>
+            <p class="org-meta">{{ e.location }}</p>
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+  </div>
+
+  <div class="sec-row" data-sec-row>
+    {%- if d.service.size > 0 %}
+    {%- assign cols = d.service.size | at_most: 4 %}
+    <section class="sec" id="service" data-sec="service" aria-labelledby="sec-service" style="--n: {{ cols }}">
+      <header class="sec-head"><h2 class="sec-title" id="sec-service">Service <span class="sec-n" data-sec-n>{{ d.service.size }}</span></h2></header>
+      <ul class="grid grid-cards">
+        {%- for s in d.service %}
+        <li class="pin pin-card pin-service" data-kind="service">
+          <h3 class="card-title">{{ s.role }}</h3>
+          {%- for g in s.groups %}
+          <div class="svc-group">
+            <p class="svc-kind">{{ g.kind }}</p>
+            <ul class="svc-items">
+              {%- for it in g.items %}
+              {%- if it.name %}
+              <li class="svc-link"><a href="{{ it.url }}" rel="noopener">{{ it.name }}</a>{% if it.note %}<span class="svc-note">{{ it.note }}</span>{% endif %}</li>
+              {%- else %}
+              <li class="tag">{{ it }}</li>
+              {%- endif %}
+              {%- endfor %}
+            </ul>
+          </div>
+          {%- endfor %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
+    {%- if d.awards.size > 0 %}
+    {%- assign cols = d.awards.size | at_most: 4 %}
+    <section class="sec" id="awards" data-sec="awards" aria-labelledby="sec-awards" style="--n: {{ cols }}">
+      <header class="sec-head"><h2 class="sec-title" id="sec-awards">Awards <span class="sec-n" data-sec-n>{{ d.awards.size }}</span></h2></header>
+      <ul class="grid grid-cards">
+        {%- for a in d.awards %}
+        <li class="pin pin-card pin-award" data-kind="awards">
+          <svg class="medal" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M9.5 2.5h4.2l3 7.2h-4.2zM22.5 2.5h-4.2l-3 7.2h4.2z" fill="currentColor" opacity=".5"/><circle cx="16" cy="19.5" r="8.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m16 14.9 1.45 2.95 3.25.47-2.35 2.3.55 3.24L16 22.33l-2.9 1.53.55-3.24-2.35-2.3 3.25-.47z" fill="currentColor"/></svg>
+          <h3 class="card-title">{{ a.title }}</h3>
+          <p class="kicker">{{ a.date }}</p>
+          <p class="card-sub">{{ a.org }}</p>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+  </div>
+
+  <div class="board-empty" data-empty hidden>
+    <p data-empty-msg>No pins match.</p>
+    <button class="pill" type="button" data-empty-reset>Clear search</button>
+  </div>
+  <p class="sr-only" aria-live="polite" data-board-status></p>
+</div>
+<script type="application/json" id="pins-data">{"me": {{ me | jsonify }}, "base": {{ site.baseurl | jsonify }}, "pubs": {{ site.data.publications | jsonify }}}</script>

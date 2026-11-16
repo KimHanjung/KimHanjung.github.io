@@ -1,0 +1,39 @@
+<dialog class="closeup" aria-labelledby="cu-title" data-closeup>
+  <button class="cu-close" type="button" aria-label="Close" data-cu-close>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+  <div class="cu-card">
+    <div class="cu-media">
+      <div class="cu-frame" data-cu-frame>
+        <div class="cu-slot" data-cu-slot></div>
+        <span class="det" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <button class="cu-nav cu-prev" type="button" aria-label="Previous paper" data-cu-prev>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="cu-nav cu-next" type="button" aria-label="Next paper" data-cu-next>
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="cu-info" data-cu-info>
+      <p class="cu-kicker" data-cu-kicker></p>
+      <h2 class="cu-title" id="cu-title" data-cu-title></h2>
+      <p class="cu-venue"><span class="venue" data-cu-venue></span><span class="cu-note" data-cu-note></span></p>
+      <p class="cu-authors" data-cu-authors></p>
+      <p class="cu-eq" data-cu-eq hidden><sup>*</sup> Equal contribution</p>
+      <div class="cu-links" data-cu-links></div>
+      <div class="cu-tags" data-cu-tags></div>
+      <div class="cu-share">
+        <button class="pill" type="button" data-cu-copy>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Copy link
+        </button>
+      </div>
+    </div>
+    <section class="cu-more" aria-labelledby="cu-more-title">
+      <h3 class="cu-more-title" id="cu-more-title">More like this</h3>
+      <div class="cu-more-grid" data-cu-more></div>
+    </section>
+  </div>
+  <p class="toast" role="status" aria-live="polite" data-toast></p>
+</dialog>

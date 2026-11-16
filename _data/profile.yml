@@ -1,5 +1,4 @@
-# Profile shown in the console header and hero.
-# Text here is edited by hand; the robot viewport reads `blocks` for the letter blocks.
+# Profile shown in the header above the pin board. Text here is edited by hand.
 name: Hanjung Kim
 handle: hanjung_kim
 headline: Ph.D. student @ Yonsei University
@@ -26,7 +25,3 @@ links:
     url: "https://twitter.com/KimD0ing"
   - label: LinkedIn
     url: "https://www.linkedin.com/in/hanjung-kim-060436191"
-# Letter blocks on the robot's table (one row per entry; keep each row at most 8 letters).
-blocks:
-  - HANJUNG
-  - KIM

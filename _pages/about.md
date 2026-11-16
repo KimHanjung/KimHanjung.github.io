@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: console
+layout: board
 title: 'Hanjung Kim'
 description: 'Hanjung Kim — Ph.D. student at Yonsei University and Research Scientist Intern at NVIDIA GEAR Lab, working on robot learning from in-the-wild human videos.'
 redirect_from:

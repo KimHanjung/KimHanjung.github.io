@@ -1,11 +1,16 @@
-# Publications, newest first. Authors ending in "*" are marked as equal contribution;
-# the profile name is highlighted automatically.
-# media.type is "video" (with a poster) or "image".
+# Publications, newest first. Each one becomes a pin on the board.
+# - topic puts the pin under that heading; headings appear in the order their topic first shows up here.
+# - Authors ending in "*" are marked as equal contribution; the profile name is highlighted.
+# - media.type is "video" (with a poster) or "image". Board thumbnails share one 16:9 frame;
+#   media.width/height are the file's pixel size and shape the detail view (16:9 if left out).
+# - tags power search and "More like this" in the pin's detail view.
 - id: gr00t2
   short: GR00T 2
   title: "GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation"
   authors: ["NVIDIA"]
   venue: Technical Report
+  topic: Robot learning
+  tags: [robot learning, foundation models, dexterity]
   links:
     - { label: Project, url: "https://research.nvidia.com/labs/gear/gr00t-2/" }
     - { label: Paper, url: "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf" }
@@ -13,6 +18,8 @@
     type: video
     src: /images/gr00t2.mp4
     poster: /images/gr00t2_poster.jpg
+    width: 640
+    height: 360
     alt: "GR00T 2 teaser: a dexterous robot hand turns the GR00T 1 block into GR00T 2"
 
 - id: huro
@@ -20,6 +27,8 @@
   title: "HuRo: Robotizing Human Videos for Scalable VLA Pretraining"
   authors: ["Jinho Jeong*", "Se June Joo*", "Jaehyun Kang", "Dongyun Kim", "Yena Kim", "Hanjung Kim", "Seon Joo Kim"]
   venue: CoRL 2026
+  topic: Robot learning
+  tags: [robot learning, human videos, VLA]
   links:
     - { label: Project, url: "https://3587jjh.github.io/HuRo/" }
     - { label: Paper, url: "https://arxiv.org/abs/2609.10706" }
@@ -28,6 +37,8 @@
     type: video
     src: /images/huro.mp4
     poster: /images/huro_poster.jpg
+    width: 640
+    height: 360
     alt: "HuRo: egocentric human videos (top) and their robotized versions (bottom)"
 
 - id: hilam
@@ -36,11 +47,15 @@
   authors: ["Hanjung Kim", "Lerrel Pinto", "Seon Joo Kim"]
   venue: ICLRW 2026
   note: "2nd Workshop on World Models: Understanding, Modelling and Scaling"
+  topic: Robot learning
+  tags: [robot learning, latent actions, world models]
   links:
     - { label: Paper, url: "https://arxiv.org/abs/2603.05815" }
   media:
     type: image
     src: /images/hilam.png
+    width: 1440
+    height: 464
     alt: "Hierarchical Latent Action Model overview"
 
 - id: uniskill
@@ -48,6 +63,8 @@
   title: "UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations"
   authors: ["Hanjung Kim*", "Jaehyun Kang*", "Hyolim Kang", "Meedeum Cho", "Seon Joo Kim", "Youngwoon Lee"]
   venue: CoRL 2025
+  topic: Robot learning
+  tags: [robot learning, human videos, skill representations, cross-embodiment]
   links:
     - { label: Project, url: "https://kimhanjung.github.io/UniSkill/" }
     - { label: Paper, url: "https://arxiv.org/pdf/2505.08787" }
@@ -56,6 +73,8 @@
     type: video
     src: /images/uniskill.mp4
     poster: /images/uniskill_poster.jpg
+    width: 640
+    height: 360
     alt: "UniSkill teaser: human and robot videos from different embodiments form large-scale video datasets, from which UniSkill learns universal skill representations"
 
 - id: hires-mllm
@@ -64,11 +83,15 @@
   authors: ["Jaeseong Lee*", "Yeeun Choi*", "Heechan Choi*", "Hanjung Kim", "Seon Joo Kim"]
   venue: CVPRW 2025
   note: "2nd Workshop on Emergent Visual Abilities and Limits of Foundation Models Workshop"
+  topic: Computer vision
+  tags: [computer vision, multimodal LLMs, high-resolution images]
   links:
     - { label: Paper, url: "https://arxiv.org/pdf/2507.10202" }
   media:
     type: image
     src: /images/pip.png
+    width: 2125
+    height: 1888
     alt: "Training-free framework for high-resolution MLLM inputs"
 
 - id: visage
@@ -76,6 +99,8 @@
   title: "VISAGE: Video Instance Segmentation with Appearance-Guided Enhancement"
   authors: ["Hanjung Kim", "Jaehyun Kang", "Miran Heo", "Sukjun Hwang", "Seoung Wug Oh", "Seon Joo Kim"]
   venue: ECCV 2024
+  topic: Computer vision
+  tags: [computer vision, video understanding, segmentation]
   links:
     - { label: Project, url: "https://kimhanjung.github.io/VISAGE/" }
     - { label: Paper, url: "https://arxiv.org/pdf/2312.04885.pdf" }
@@ -83,6 +108,8 @@
   media:
     type: image
     src: /images/visage.png
+    width: 759
+    height: 419
     alt: "VISAGE architecture overview"
 
 - id: sola
@@ -92,12 +119,16 @@
   venue: CVPR 2023
   note: "Finalist at Qualcomm Innovation Fellowship 2023"
   note_kind: award
+  topic: Computer vision
+  tags: [computer vision, video understanding, action localization]
   links:
     - { label: Paper, url: "https://openaccess.thecvf.com/content/CVPR2023/papers/Kang_Soft-Landing_Strategy_for_Alleviating_the_Task_Discrepancy_Problem_in_Temporal_CVPR_2023_paper.pdf" }
     - { label: Code, url: "https://github.com/musicalOffering/sola" }
   media:
     type: image
     src: /images/sola.png
+    width: 694
+    height: 580
     alt: "Soft-Landing strategy overview"
 
 - id: genvis
@@ -105,10 +136,14 @@
   title: "A Generalized Framework for Video Instance Segmentation"
   authors: ["Miran Heo", "Sukjun Hwang", "Jeongseok Hyun", "Hanjung Kim", "Seoung Wug Oh", "Joon-Young Lee", "Seon Joo Kim"]
   venue: CVPR 2023
+  topic: Computer vision
+  tags: [computer vision, video understanding, segmentation]
   links:
     - { label: Paper, url: "https://openaccess.thecvf.com/content/CVPR2023/html/Heo_A_Generalized_Framework_for_Video_Instance_Segmentation_CVPR_2023_paper.html" }
     - { label: Code, url: "https://github.com/miranheo/GenVIS" }
   media:
     type: image
     src: /images/genvis.png
+    width: 1302
+    height: 822
     alt: "GenVIS framework overview"

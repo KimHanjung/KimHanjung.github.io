@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include board/head.html %}
+</head>
+<body class="page-board">
+  <a class="skip-link" href="#content">Skip to content</a>
+  {% include board/topbar.html search=true %}
+
+  <main id="main">
+    {% include board/profile.html %}
+    {% include board/chips.html %}
+    {% include board/pins.html about=content %}
+  </main>
+
+  {% include board/footer.html %}
+  {% include board/closeup.html %}
+  <button class="to-top" type="button" aria-label="Back to top" data-to-top>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</body>
+</html>

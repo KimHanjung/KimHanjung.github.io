@@ -1,0 +1,31 @@
+{%- assign profile = site.data.profile -%}
+{%- assign home = '/' | relative_url -%}
+<header class="topbar" data-topbar>
+  <a class="brand" href="{{ home }}" aria-label="{{ profile.name }}, home">
+    <span class="brand-mark" aria-hidden="true">HK</span>
+    <span class="brand-path"><span class="dim">~/</span>{{ profile.handle }}<span class="caret" aria-hidden="true"></span></span>
+  </a>
+  {%- if include.search %}
+  <form class="search" role="search" action="{{ home }}" data-search-form>
+    <label class="sr-only" for="q">Search pins</label>
+    <svg class="search-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <input id="q" name="q" type="search" placeholder="Search papers, topics, people" data-placeholder-short="Search" autocomplete="off" spellcheck="false" enterkeyhint="search" data-search>
+    <kbd class="search-kbd" aria-hidden="true" title="Press / to search">/</kbd>
+    <button class="search-clear" type="button" aria-label="Clear search" data-search-clear hidden>
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+  </form>
+  {%- else %}
+  <span class="topbar-spacer"></span>
+  {%- endif %}
+  <div class="topbar-tools">
+    <a class="pill is-primary cv-pill" href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>CV</a>
+    <button class="icon-btn motion-toggle" type="button" data-motion-toggle aria-pressed="false" aria-label="Pause animations" title="Pause animations">
+      <svg class="i-pause" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1.2" fill="currentColor"/></svg>
+      <svg class="i-play" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+    </button>
+    <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
