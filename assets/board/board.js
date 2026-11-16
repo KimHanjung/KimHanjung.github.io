@@ -104,13 +104,6 @@ function setupMedia() {
   const syncAll = () => videos.forEach(sync);
 
   for (const v of videos) {
-    const badge = v.parentElement && v.parentElement.querySelector('[data-dur]');
-    v.addEventListener('loadedmetadata', () => {
-      if (!badge || !Number.isFinite(v.duration)) return;
-      const s = Math.max(1, Math.round(v.duration));
-      badge.textContent = `${Math.floor(s / 60)}:${pad2(s % 60)}`;
-      badge.hidden = false;
-    });
     // with reduced motion, a video plays only while its pin is hovered or has keyboard focus
     const pin = v.closest('.pin');
     if (!pin) continue;
