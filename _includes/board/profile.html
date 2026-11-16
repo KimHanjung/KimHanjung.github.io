@@ -3,7 +3,7 @@
   <div class="profile-inner">
     <figure class="avatar">
       <img src="{{ profile.avatar | relative_url }}" alt="Portrait of {{ profile.name }}" width="480" height="480" decoding="async" fetchpriority="high">
-      <span class="det" aria-hidden="true"><i></i><i></i><i></i><i></i><b>person 0.98</b></span>
+      <span class="det" aria-hidden="true"><i></i><i></i><i></i><i></i><span class="det-tags"><b>person 0.98</b><b class="is-alt">robot 0.02</b></span></span>
     </figure>
     <h1 id="name" class="name">{{ profile.name }}</h1>
     <ul class="roles">
