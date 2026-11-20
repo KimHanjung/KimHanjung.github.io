@@ -11,7 +11,9 @@ redirect_from:
 I am a Ph.D. student at Yonsei University, advised by [Prof. Seon Joo Kim](https://sites.google.com/site/seonjookim/).
 Prior to my Ph.D. studies, I received a B.S. degree from Yonsei University.
 
+{% comment %} Hidden 2026-11-20 for about a month; delete this comment wrapper to show again. {% endcomment %}{% comment %}
 <p class="callout"><strong>I am actively seeking Research Scientist positions starting in 2027.</strong></p>
+{% endcomment %}
 
 My research focuses on **Robot Learning** 🤖 and **Video Understanding** 🎥.
 I am particularly interested in leveraging <i>in-the-wild</i> human videos to teach robots everyday tasks, starting from simple actions such as pick-and-place and progressing toward more complex behaviors.

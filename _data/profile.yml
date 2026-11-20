@@ -8,7 +8,8 @@ avatar: /images/hanjung_480.jpg
 location: Seoul, South Korea
 email: hanjungkim@yonsei.ac.kr
 cv: /files/cv_20260302.pdf
-status: Seeking Research Scientist positions starting in 2027
+# Hidden 2026-11-20 for about a month; uncomment to show the badge again.
+# status: Seeking Research Scientist positions starting in 2027
 roles:
   - title: Ph.D. student
     org: Yonsei University
